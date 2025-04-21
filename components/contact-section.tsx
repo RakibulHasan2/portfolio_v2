@@ -133,7 +133,7 @@ export const ContactSection = () => {
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>
-                  I'll get back to you as soon as possible
+                  I&rsquo;ll get back to you as soon as possible
                 </CardDescription>
               </CardHeader>
               <CardContent>
