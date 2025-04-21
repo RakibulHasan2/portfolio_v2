@@ -36,7 +36,7 @@ export const Navbar = () => {
       "fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-sm",
       isScrolled ? "bg-background/80 shadow-md py-6" : "bg-transparent py-4"
     )}>
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="container mx-auto px-10 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tight">
           <motion.span 
             initial={{ opacity: 0, y: -10 }}
@@ -86,7 +86,7 @@ export const Navbar = () => {
             transition={{ duration: 0.3, delay: 0.7 }}
           >
             <Button asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href="/Rakibul-Hasan-Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
                 Resume
               </a>
@@ -136,7 +136,7 @@ export const Navbar = () => {
                 transition={{ duration: 0.3, delay: 0.6 }}
               >
                 <Button asChild className="w-full mt-2">
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <a href="/Rakibul-Hasan-Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                     <FileText className="h-4 w-4" />
                     Resume
                   </a>

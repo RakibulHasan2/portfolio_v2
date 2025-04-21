@@ -1,164 +1,137 @@
 "use client"
 
-import React from 'react'
 import { motion } from 'framer-motion'
 import { SectionHeading } from '@/components/section-heading'
-import { Card, CardContent } from '@/components/ui/card'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Code2, Layout, Database, Server, Globe } from 'lucide-react'
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiMui, SiNodedotjs, SiExpress, SiGraphql, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiDocker, SiVercel, SiNetlify, SiFigma, SiPostman, SiJest, SiTrello, SiPython, SiCplusplus, SiDotnet, SiGit } from 'react-icons/si'
+import { Layout, Server, Database, Code2, Globe } from 'lucide-react'
+import { FaAws } from "react-icons/fa";
+import { FaJava } from "react-icons/fa6";
+import { VscVscodeInsiders } from "react-icons/vsc";
+// Skill icons map
+const skillIconMap : any = {
+  "HTML5": <SiHtml5 />,
+  "CSS3": <SiCss3 />,
+  "JavaScript": <SiJavascript />,
+  "React.js": <SiReact />,
+  "Next.js": <SiNextdotjs />,
+  "TypeScript": <SiTypescript />,
+  "Tailwind CSS": <SiTailwindcss />,
+  "Redux": <SiRedux />,
+  "Material UI": <SiMui />,
+  "Node.js": <SiNodedotjs />,
+  "Express.js": <SiExpress />,
+  "GraphQL": <SiGraphql />,
+  "MongoDB": <SiMongodb />,
+  "PostgreSQL": <SiPostgresql />,
+  "MySQL": <SiMysql />,
+  "Firebase": <SiFirebase />,
+  "Git/GitHub": <SiGit />,
+  "Docker": <SiDocker />,
+  "AWS": <FaAws />,
+  "Vercel": <SiVercel />,
+  "Netlify": <SiNetlify />,
+  "Figma": <SiFigma />,
+  "Postman": <SiPostman />,
+  "VS Code": <VscVscodeInsiders />,
+  "Trello": <SiTrello />,
+  "Python": <SiPython />,
+  "C++": <SiCplusplus />,
+  "Java": <FaJava />,
+  "ASP.NET Core": <SiDotnet />,
+}
 
+// Skill categories
 const skillCategories = [
   {
     id: "frontend",
     label: "Frontend",
-    icon: <Layout className="h-5 w-5" />,
+    icon: <Layout className="h-4 w-4" />,
     skills: [
-      { name: "HTML5", level: 95 },
-      { name: "CSS3", level: 90 },
-      { name: "JavaScript", level: 95 },
-      { name: "React.js", level: 92 },
-      { name: "Next.js", level: 88 },
-      { name: "TypeScript", level: 85 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "Redux", level: 85 },
-      { name: "Material UI", level: 80 },
+      "HTML5", "CSS3", "JavaScript", "React.js", "Next.js",
+      "TypeScript", "Tailwind CSS", "Redux", "Material UI"
     ]
   },
   {
     id: "backend",
     label: "Backend",
-    icon: <Server className="h-5 w-5" />,
+    icon: <Server className="h-4 w-4" />,
     skills: [
-      { name: "Node.js", level: 88 },
-      { name: "Express.js", level: 90 },
-      { name: "GraphQL", level: 75 },
-      { name: "RESTful APIs", level: 92 },
-      { name: "Authentication (JWT)", level: 85 },
-      { name: "Socket.io", level: 80 },
-      { name: "ASP.NET Core", level: 70 }, // Added from your resume
+      "Node.js", "Express.js", "GraphQL", "ASP.NET Core"
     ]
   },
   {
     id: "database",
     label: "Database",
-    icon: <Database className="h-5 w-5" />,
+    icon: <Database className="h-4 w-4" />,
     skills: [
-      { name: "MongoDB", level: 90 },
-      { name: "PostgreSQL", level: 80 },
-      { name: "MySQL", level: 85 },
-      { name: "Firebase", level: 82 },
-      { name: "Supabase", level: 75 },
+      "MongoDB", "PostgreSQL", "MySQL", "Firebase"
     ]
   },
   {
     id: "tools",
     label: "Tools",
-    icon: <Code2 className="h-5 w-5" />,
+    icon: <Code2 className="h-4 w-4" />,
     skills: [
-      { name: "Git/GitHub", level: 92 },
-      { name: "Docker", level: 75 },
-      { name: "AWS", level: 70 },
-      { name: "Vercel", level: 88 },
-      { name: "Netlify", level: 85 },
-      { name: "Figma", level: 80 },
-      { name: "Postman", level: 90 }, // Added from your resume
-      { name: "Jest", level: 75 },
-      { name: "Trello", level: 85 },
+      "Git/GitHub", "Docker", "AWS", "Vercel", "Netlify",
+      "Figma", "Postman", "VS Code", "Trello"
     ]
   },
   {
     id: "languages",
     label: "Languages",
-    icon: <Globe className="h-5 w-5" />,
+    icon: <Globe className="h-4 w-4" />,
     skills: [
-      { name: "JavaScript", level: 95 },
-      { name: "TypeScript", level: 85 },
-      { name: "Python", level: 70 },
-      { name: "C++", level: 60 },
-      { name: "Java", level: 65 },
+      "JavaScript", "TypeScript", "Python", "C++", "Java"
     ]
   }
 ]
 
 export const SkillsSection = () => {
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 bg-gradient-to-br from-background to-muted">
       <div className="container mx-auto px-4">
         <SectionHeading 
           title="Skills & Expertise" 
-          subtitle="Technologies and tools I work with to bring ideas to life" 
+          subtitle="Technologies I craft solutions with" 
         />
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-          className="mt-12"
-        >
-          <Tabs defaultValue="frontend" className="w-full">
-            <div className="flex justify-center mb-8">
-              <TabsList className="grid grid-cols-2 md:grid-cols-5 bg-background border border-border">
-                {skillCategories.map(category => (
-                  <TabsTrigger 
-                    key={category.id} 
-                    value={category.id}
-                    className="flex items-center gap-2 data-[state=active]:bg-primary/10"
-                  >
-                    {category.icon}
-                    <span className="hidden md:inline">{category.label}</span>
-                  </TabsTrigger>
-                ))}
-              </TabsList>
+
+        {skillCategories.map((category, catIndex) => (
+          <motion.div
+            key={category.id}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: catIndex * 0.1 }}
+            viewport={{ once: true }}
+            className="mt-12"
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <div className="p-2 rounded-full bg-primary/10 text-primary">
+                {category.icon}
+              </div>
+              <h3 className="text-lg font-semibold">{category.label}</h3>
             </div>
-            
-            {skillCategories.map(category => (
-              <TabsContent key={category.id} value={category.id} className="mt-0">
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                      {category.skills.map((skill, index) => (
-                        <SkillBar 
-                          key={skill.name} 
-                          name={skill.name} 
-                          level={skill.level} 
-                          index={index} 
-                        />
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-            ))}
-          </Tabs>
-        </motion.div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+              {category.skills.map((skill, index) => (
+                <motion.div
+                  key={skill}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -5 }}
+                  className="relative rounded-xl border border-white/10 backdrop-blur-sm bg-white/5 p-4 flex flex-col items-center text-center shadow-md hover:shadow-lg transition-all"
+                >
+                  <div className="text-primary text-3xl mb-3">
+                    {skillIconMap[skill] || <Code2 className="h-6 w-6" />}
+                  </div>
+                  <span className="text-sm font-medium text-foreground/90">{skill}</span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   )
-}
-
-const SkillBar = ({ name, level, index }: { name: string, level: number, index: number }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="space-y-2"
-    >
-      <div className="flex justify-between items-center">
-        <h4 className="text-sm font-medium">{name}</h4>
-        <span className="text-xs text-muted-foreground">{level}%</span>
-      </div>
-      <div className="h-2 w-full bg-secondary rounded-full overflow-hidden">
-        <motion.div
-          className="h-full bg-gradient-to-r from-primary to-chart-1 rounded-full"
-          initial={{ width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.2 + index * 0.1 }}
-        />
-      </div>
-    </motion.div>
-  )
-}
+};

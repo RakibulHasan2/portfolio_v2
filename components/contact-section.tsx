@@ -99,13 +99,13 @@ export const ContactSection = () => {
                 <ContactItem 
                   icon={<Phone className="h-5 w-5" />}
                   title="Phone"
-                  value="+880 1234-567890"
-                  href="tel:+8801234567890"
+                  value="+880 1788-756299"
+                  href="tel:+8801788756299"
                 />
                 <ContactItem 
                   icon={<MapPin className="h-5 w-5" />}
                   title="Location"
-                  value="Dhaka, Bangladesh"
+                  value="Gazipura 27, Tongi"
                   href="#"
                 />
                 
@@ -114,7 +114,7 @@ export const ContactSection = () => {
                   <div className="flex space-x-4">
                     <SocialButton href="https://github.com/RakibulHasan2" name="GitHub" />
                     <SocialButton href="https://www.linkedin.com/in/rakibul-hasan-0261a8236/" name="LinkedIn" />
-                    <SocialButton href="https://joyful-douhua-499142.netlify.app/" name="Portfolio" />
+                    <SocialButton href="https://www.facebook.com/profile.php?id=100012115905344" name="Facebook" />
                   </div>
                 </div>
               </CardContent>
@@ -266,7 +266,12 @@ const SocialButton = ({ href, name }: { href: string, name: string }) => {
       <span className="sr-only">{name}</span>
       {name === "GitHub" && <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd"></path></svg>}
       {name === "LinkedIn" && <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"></path></svg>}
-      {name === "Portfolio" && <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>}
+      {name === "Facebook" && (
+  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M22.675 0h-21.35C.596 0 0 .596 0 1.326v21.348C0 23.404.596 24 1.326 24H12.82v-9.294H9.692V11.08h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.626h-3.12V24h6.116C23.404 24 24 23.404 24 22.674V1.326C24 .596 23.404 0 22.675 0z"/>
+  </svg>
+)}
+
     </a>
   )
 }

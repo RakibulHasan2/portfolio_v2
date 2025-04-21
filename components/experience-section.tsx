@@ -9,41 +9,51 @@ import { cn } from '@/lib/utils'
 const experienceData = [
   {
     id: 1,
-    title: "Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    location: "Remote",
-    duration: "Jan 2023 - Present",
-    description: "Leading development of web applications using React, Node.js, and MongoDB. Implementing responsive designs and RESTful APIs. Collaborating with cross-functional teams to deliver high-quality products.",
+    title: "Frontend Developer Intern",
+    company: "Hotchpotch Innovations LTD",
+    location: "Onsite Uttara",
+    duration: "feb 2025 - april 2025",
+    description: "Completed a 3-month internship as a Frontend Developer. Led the development of the company's official website, ensuring responsive design and optimized performance. Additionally, contributed to a USA-based e-commerce client project by building the shop website and developing a custom admin panel for product and order management.",
     type: "work"
   },
   {
     id: 2,
-    title: "Frontend Developer",
-    company: "Digital Innovations",
+    title: "Participated in Dhaka Divisional Hackathon 2024 - Technocrats V2",
+    company: "Hackathon Event",
     location: "Dhaka, Bangladesh",
-    duration: "Jun 2022 - Dec 2022",
-    description: "Developed and maintained client websites using React and Next.js. Created reusable components and implemented responsive designs. Worked closely with designers to ensure pixel-perfect implementation.",
+    duration: "Dec 24,2024",
+    description: "Served as a core team member in a competitive hackathon, contributing to the onsite finals by developing and training an AI model for backend services.",
     type: "work"
   },
   {
     id: 3,
-    title: "Web Development Intern",
-    company: "StartUp Hub",
-    location: "Dhaka, Bangladesh",
-    duration: "Jan 2022 - May 2022",
-    description: "Assisted in developing website features using JavaScript and React. Participated in code reviews and learned best practices. Gained hands-on experience with modern web development workflows.",
+    title: "Executive Member",
+    company: "Hult Prize Foundation",
+    location: "IUBAT, Dhaka",
+    duration: "2021 - 2022",
+    description: "Organized and promoted campus-wide events encouraging entrepreneurship and social impact, boosting student participation in the global Hult Prize competition.",
     type: "work"
   },
   {
     id: 4,
-    title: "BSc in Computer Science",
-    company: "Bangladesh University of Engineering and Technology",
+    title: "Executive Member",
+    company: "BASIS Student Forum",
+    location: "IUBAT, Dhaka",
+    duration: "2021 - 2022",
+    description: "Collaborated in organizing industry-focused events and tech workshops, actively promoting innovation and career opportunities in the local tech scene.",
+    type: "work"
+  },
+  {
+    id: 5,
+    title: "BSc in Computer Science & Engineering",
+    company: "International University of Business, Agriculture and Technology (IUBAT)",
     location: "Dhaka, Bangladesh",
-    duration: "2018 - 2022",
-    description: "Focused on software development, algorithms, and database systems. Completed projects in web development and machine learning. Graduated with honors.",
+    duration: "May 2021 - Present",
+    description: "Pursuing a Bachelor's degree with a focus on software development, algorithms, web technologies, and system design. Completed major projects in MERN stack, ASP.NET Core, and participated in competitive programming events.",
     type: "education"
   }
 ]
+
 
 export const ExperienceSection = () => {
   return (

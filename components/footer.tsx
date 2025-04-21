@@ -67,7 +67,7 @@ export const Footer = () => {
             </FooterSection>
             
             <FooterSection title="Resources">
-              <FooterLink href="/resume.pdf" external>Resume</FooterLink>
+              <FooterLink href="/Rakibul-Hasan-Resume.pdf" external>Resume</FooterLink>
               <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
               <FooterLink href="/terms">Terms of Service</FooterLink>
             </FooterSection>
