@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/providers/theme-provider'
-import { Toaster } from '@/components/ui/toaster'
+import { Toaster } from "sonner";
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { AnimatedCursor } from '@/components/animated-cursor'
@@ -32,7 +32,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <AnimatedCursor />
-          <Toaster />
+          <Toaster richColors position="bottom-right" />
         </ThemeProvider>
       </body>
     </html>
