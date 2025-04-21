@@ -14,6 +14,7 @@ import quiz from "@/public/projects/quiz.jpg"
 import globe from "@/public/projects/globe.jpg"
 import image2 from "@/public/projects/image.png"
 import image1 from "@/public/projects/image1.png"
+import hotch from "@/public/projects/hotch.png"
 const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
@@ -64,6 +65,15 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
+      title: "Company Portfolio",
+      description: "A company portfolio website featuring service overviews, project showcases, and team profiles for Hotchpotch Innovations Ltd.",
+      image: hotch,
+      liveLink: "https://hotchpotch-frontend-dusky.vercel.app/",
+      technologies: ["Next JS", "Tailwind CSS", "Typescript", "GSAP"],
+      category: "frontend"
+    },
+    {
+      id: 6,
       title: "Landing Page",
       description: "A simple Next JS Landing Page",
       image: image2,
@@ -73,7 +83,7 @@ const ProjectsSection = () => {
       category: "frontend"
     },
     {
-      id: 6,
+      id: 7,
       title: "Simple Net Tracking Page",
       description: "A simple Next JS Landing Page",
       image: image1,
@@ -172,7 +182,7 @@ interface Project {
   description: string;
   image: string | StaticImageData;
   liveLink: string;
-  githubLink: string;
+  githubLink?: string;
   backendLink?: string;
   technologies: string[];
   category: string;
