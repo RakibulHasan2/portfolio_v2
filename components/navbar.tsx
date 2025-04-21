@@ -34,7 +34,7 @@ export const Navbar = () => {
   return (
     <header className={cn(
       "fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-sm",
-      isScrolled ? "bg-background/80 shadow-md py-2" : "bg-transparent py-4"
+      isScrolled ? "bg-background/80 shadow-md py-6" : "bg-transparent py-4"
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tight">
