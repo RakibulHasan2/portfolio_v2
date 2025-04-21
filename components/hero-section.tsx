@@ -1,14 +1,11 @@
 "use client"
 
-import React, { useRef } from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import { ArrowDownToLine, Github as GitHub, Linkedin, Mail } from 'lucide-react'
-
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { ArrowDownToLine, Github as GitHub, Linkedin, Mail } from 'lucide-react';
+import img1 from "@/public/1.jpeg";
 export const HeroSection = () => {
-  const constraintsRef = useRef(null)
-
   return (
     <section 
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20 pb-10"
@@ -35,10 +32,9 @@ export const HeroSection = () => {
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/20 to-chart-2/40 animate-rotate-slow" />
             <div className="absolute inset-2 rounded-3xl overflow-hidden bg-background flex items-center justify-center">
               <Image 
-                src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                src={img1}
                 alt="Rakibul Hasan" 
-                width={500} 
-                height={500}
+                fill
                 className="object-cover h-full w-full"
               />
             </div>
@@ -57,18 +53,15 @@ export const HeroSection = () => {
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-chart-2">
-              Hello, I'm Rakibul Hasan
+              Hello, I&rsquo;m Rakibul Hasan
             </span>
           </h1>
           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6">
             Full Stack Developer
           </h2>
           <p className="text-muted-foreground mb-8 text-lg">
-            I craft seamless digital experiences with clean code and creative solutions.
-            Specializing in building modern, interactive web applications that deliver
-            exceptional user experiences with a focus on performance and accessibility.
+          Passionate and driven Full Stack Developer with over a year of hands-on experience building dynamic full stack applications. Currently interning as a Frontend Developer at Hotchpotch Innovations Ltd, where I’ve been contributing to real-world projects for the past 3 months.
           </p>
-
           {/* Social Links */}
           <div className="flex gap-4 mb-8">
             <motion.a
