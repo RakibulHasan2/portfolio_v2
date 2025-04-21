@@ -42,7 +42,7 @@ export const AboutSection = () => {
             <h3 className="text-2xl font-bold">Full Stack Developer with a passion for creating exceptional digital experiences</h3>
             
             <p className="text-muted-foreground">
-              I'm Rakibul Hasan, a Full Stack Developer with expertise in building modern, responsive web applications. With a strong foundation in both frontend and backend technologies, I create seamless and engaging user experiences.
+              I&rsquo;m Rakibul Hasan, a Full Stack Developer with expertise in building modern, responsive web applications. With a strong foundation in both frontend and backend technologies, I create seamless and engaging user experiences.
             </p>
             
             <p className="text-muted-foreground">
@@ -50,7 +50,7 @@ export const AboutSection = () => {
             </p>
             
             <p className="text-muted-foreground">
-              When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously expanding my knowledge through learning and experimentation.
+              When I&rsquo;m not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously expanding my knowledge through learning and experimentation.
             </p>
             
             <div className="pt-4">
