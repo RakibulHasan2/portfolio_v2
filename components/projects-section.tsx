@@ -59,22 +59,22 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing my projects and skills.",
+      title: "Landing Page",
+      description: "A simple Next JS Landing Page",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      liveLink: "https://joyful-douhua-499142.netlify.app/",
-      githubLink: "https://github.com/RakibulHasan2/portfolio",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+      liveLink: "https://next-js-landing-page-sand.vercel.app/",
+      githubLink: "https://github.com/RakibulHasan2/Next-JS-Landing-Page",
+      technologies: ["Next JS", "Tailwind CSS", "Typescript"],
       category: "frontend"
     },
     {
       id: 6,
-      title: "Weather Dashboard",
-      description: "A weather application with current conditions, forecasts, and location search.",
+      title: "Simple Net Tracking Page",
+      description: "A simple Next JS Landing Page",
       image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      liveLink: "#",
-      githubLink: "#",
-      technologies: ["React", "OpenWeather API", "CSS", "Axios"],
+      liveLink: "https://net-tracking-nine.vercel.app/",
+      githubLink: "https://github.com/RakibulHasan2/Net-Tracking",
+      technologies: ["HTML", "Tailwind CSS"],
       category: "frontend"
     }
   ];

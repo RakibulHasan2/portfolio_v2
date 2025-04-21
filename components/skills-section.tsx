@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { SectionHeading } from '@/components/section-heading'
 import { Card, CardContent } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { BarChart2, Code2, Layout, Database, Server, Globe } from 'lucide-react'
+import { Code2, Layout, Database, Server, Globe } from 'lucide-react'
 
 const skillCategories = [
   {
@@ -13,14 +13,15 @@ const skillCategories = [
     label: "Frontend",
     icon: <Layout className="h-5 w-5" />,
     skills: [
-      { name: "HTML/CSS", level: 95 },
-      { name: "JavaScript", level: 90 },
-      { name: "React", level: 92 },
+      { name: "HTML5", level: 95 },
+      { name: "CSS3", level: 90 },
+      { name: "JavaScript", level: 95 },
+      { name: "React.js", level: 92 },
       { name: "Next.js", level: 88 },
       { name: "TypeScript", level: 85 },
       { name: "Tailwind CSS", level: 90 },
       { name: "Redux", level: 85 },
-      { name: "Material UI", level: 80 }
+      { name: "Material UI", level: 80 },
     ]
   },
   {
@@ -32,8 +33,9 @@ const skillCategories = [
       { name: "Express.js", level: 90 },
       { name: "GraphQL", level: 75 },
       { name: "RESTful APIs", level: 92 },
-      { name: "Authentication", level: 85 },
-      { name: "Socket.io", level: 80 }
+      { name: "Authentication (JWT)", level: 85 },
+      { name: "Socket.io", level: 80 },
+      { name: "ASP.NET Core", level: 70 }, // Added from your resume
     ]
   },
   {
@@ -45,7 +47,7 @@ const skillCategories = [
       { name: "PostgreSQL", level: 80 },
       { name: "MySQL", level: 85 },
       { name: "Firebase", level: 82 },
-      { name: "Supabase", level: 75 }
+      { name: "Supabase", level: 75 },
     ]
   },
   {
@@ -59,7 +61,9 @@ const skillCategories = [
       { name: "Vercel", level: 88 },
       { name: "Netlify", level: 85 },
       { name: "Figma", level: 80 },
-      { name: "Jest", level: 75 }
+      { name: "Postman", level: 90 }, // Added from your resume
+      { name: "Jest", level: 75 },
+      { name: "Trello", level: 85 },
     ]
   },
   {
@@ -71,7 +75,7 @@ const skillCategories = [
       { name: "TypeScript", level: 85 },
       { name: "Python", level: 70 },
       { name: "C++", level: 60 },
-      { name: "Java", level: 65 }
+      { name: "Java", level: 65 },
     ]
   }
 ]
