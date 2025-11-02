@@ -29,19 +29,6 @@ export const AboutSection = () => {
                 />
               </div>
             </div>
-            {/* <div className="relative max-w-[800px]">
-              <div className="absolute -inset-2 bg-gradient-to-r from-primary to-chart-1 rounded-xl blur-lg opacity-30 group-hover:opacity-100 transition duration-1000"></div>
-              <div className="relative rounded-xl overflow-hidden">
-                <Image
-                  // src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg"
-                  src={img1}
-                  alt="Rakibul Hasan working"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            </div> */}
           </motion.div>
 
           <motion.div
