@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { SectionHeading } from "@/components/section-heading";
-import img1 from "@/public/2.jpeg";
+import img1 from "@/public/rakib3.jpg";
 export const AboutSection = () => {
   return (
     <section id="about" className="py-20 relative">
