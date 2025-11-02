@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { SectionHeading } from '@/components/section-heading'
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiMui, SiNodedotjs, SiExpress, SiGraphql, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiDocker, SiVercel, SiNetlify, SiFigma, SiPostman, SiJest, SiTrello, SiPython, SiCplusplus, SiDotnet, SiGit } from 'react-icons/si'
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiMui, SiNodedotjs, SiExpress, SiGraphql, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiDocker, SiVercel, SiNetlify, SiFigma, SiPostman, SiJest, SiTrello, SiPython, SiCplusplus, SiDotnet, SiGit, SiNestjs, SiPrisma, SiFlask, SiFastapi, SiAntdesign } from 'react-icons/si'
 import { Layout, Server, Database, Code2, Globe } from 'lucide-react'
 import { FaAws } from "react-icons/fa";
 import { FaJava } from "react-icons/fa6";
@@ -18,13 +18,16 @@ const skillIconMap : any = {
   "Tailwind CSS": <SiTailwindcss />,
   "Redux": <SiRedux />,
   "Material UI": <SiMui />,
+  "Ant Design": <SiAntdesign />,
   "Node.js": <SiNodedotjs />,
   "Express.js": <SiExpress />,
+  "NestJS": <SiNestjs />,
   "GraphQL": <SiGraphql />,
   "MongoDB": <SiMongodb />,
   "PostgreSQL": <SiPostgresql />,
   "MySQL": <SiMysql />,
   "Firebase": <SiFirebase />,
+  "Prisma": <SiPrisma />,
   "Git/GitHub": <SiGit />,
   "Docker": <SiDocker />,
   "AWS": <FaAws />,
@@ -35,9 +38,12 @@ const skillIconMap : any = {
   "VS Code": <VscVscodeInsiders />,
   "Trello": <SiTrello />,
   "Python": <SiPython />,
+  "Flask": <SiFlask />,
+  "FastAPI": <SiFastapi />,
   "C++": <SiCplusplus />,
   "Java": <FaJava />,
   "ASP.NET Core": <SiDotnet />,
+  "GSAP": <Code2 />,
 }
 
 // Skill categories
@@ -47,8 +53,8 @@ const skillCategories = [
     label: "Frontend",
     icon: <Layout className="h-4 w-4" />,
     skills: [
-      "HTML5", "CSS3", "JavaScript", "React.js", "Next.js",
-      "TypeScript", "Tailwind CSS", "Redux", "Material UI"
+      "React.js", "Next.js", "Redux", "Tailwind CSS", "HTML5", "CSS3", 
+      "JavaScript", "TypeScript", "GSAP", "Ant Design", "Material UI"
     ]
   },
   {
@@ -56,32 +62,31 @@ const skillCategories = [
     label: "Backend",
     icon: <Server className="h-4 w-4" />,
     skills: [
-      "Node.js", "Express.js", "GraphQL", "ASP.NET Core"
+      "Node.js", "Express.js", "NestJS", "ASP.NET Core", "Python", "Flask", "FastAPI"
     ]
   },
   {
     id: "database",
-    label: "Database",
+    label: "Database & ORM",
     icon: <Database className="h-4 w-4" />,
     skills: [
-      "MongoDB", "PostgreSQL", "MySQL", "Firebase"
+      "PostgreSQL", "MongoDB", "Prisma", "Firebase"
+    ]
+  },
+  {
+    id: "devops",
+    label: "DevOps & Cloud",
+    icon: <Globe className="h-4 w-4" />,
+    skills: [
+      "Docker", "AWS", "Vercel", "Firebase", "Git/GitHub"
     ]
   },
   {
     id: "tools",
-    label: "Tools",
+    label: "Tools & Collaboration",
     icon: <Code2 className="h-4 w-4" />,
     skills: [
-      "Git/GitHub", "Docker", "AWS", "Vercel", "Netlify",
-      "Figma", "Postman", "VS Code", "Trello"
-    ]
-  },
-  {
-    id: "languages",
-    label: "Languages",
-    icon: <Globe className="h-4 w-4" />,
-    skills: [
-      "JavaScript", "TypeScript", "Python", "C++", "Java"
+      "Postman", "Figma", "VS Code", "Trello"
     ]
   }
 ]

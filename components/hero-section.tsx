@@ -45,10 +45,10 @@ export const HeroSection = () => {
             </span>
           </h1>
           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6">
-            Full Stack Developer
+            Full Stack Engineer
           </h2>
           <p className="text-muted-foreground mb-8 text-lg">
-          Passionate and driven Full Stack Developer with over a year of hands-on experience building dynamic full stack applications. Currently interning as a Frontend Developer at Hotchpotch Innovations Ltd, where I’ve been contributing to real-world projects for the past 3 months.
+          Full Stack Engineer with practical experience developing and deploying eCommerce, portfolio websites, and comprehensive restaurant management systems using Next.js, React.js, NestJS, Prisma, Docker, Vercel and AWS. Currently working at Hotchpotch Digital, contributing across the full project lifecycle.
           </p>
           {/* Social Links */}
           <div className="flex gap-4 mb-8">
@@ -64,7 +64,7 @@ export const HeroSection = () => {
               <span className="sr-only">GitHub</span>
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/rakibul-hasan-0261a8236/"
+              href="https://www.linkedin.com/in/rakibulhasn2/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -5, scale: 1.1 }}

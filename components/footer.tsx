@@ -52,7 +52,7 @@ export const Footer = () => {
                 GitHub
               </FooterLink>
               <FooterLink 
-                href="https://www.linkedin.com/in/rakibul-hasan-0261a8236/" 
+                href="https://www.linkedin.com/in/rakibulhasn2/" 
                 external
                 icon={<Linkedin className="h-4 w-4 mr-2" />}
               >
@@ -81,7 +81,7 @@ export const Footer = () => {
             transition={{ duration: 1 }}
           >
             <p>© {currentYear} Rakibul Hasan. All rights reserved.</p>
-            <p className="mt-1">Full Stack Developer specializing in modern web applications</p>
+            <p className="mt-1">Full Stack Engineer specializing in modern web applications</p>
           </motion.div>
         </div>
       </div>

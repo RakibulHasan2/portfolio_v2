@@ -9,47 +9,56 @@ import { cn } from '@/lib/utils'
 const experienceData = [
   {
     id: 1,
-    title: "Frontend Developer Intern",
-    company: "Hotchpotch Innovations LTD",
-    location: "Onsite Uttara",
-    duration: "feb 2025 - april 2025",
-    description: "Completed a 3-month internship as a Frontend Developer. Led the development of the company's official website, ensuring responsive design and optimized performance. Additionally, contributed to a USA-based e-commerce client project by building the shop website and developing a custom admin panel for product and order management.",
+    title: "Full Stack Engineer",
+    company: "Hotchpotch Digital",
+    location: "Dhaka, Bangladesh",
+    duration: "Feb 2025 - Present",
+    description: "Developed and maintained multiple web applications including the Hotchpotch Digital website, a USA client eCommerce platform (Shop & Admin Panel), the Adda Chinese Party Center Management System, and several buying house portfolio websites. Built responsive interfaces using Next.js, React.js, Tailwind CSS, and ANT Design. Integrated frontend with NestJS backend APIs, designed SaaS eCommerce data models using Prisma, and deployed applications using Docker, cPanel, and AWS EC2. Led designer team coordination and contributed to product research.",
     type: "work"
   },
   {
     id: 2,
-    title: "Participated in Dhaka Divisional Hackathon 2024 - Technocrats V2",
-    company: "Hackathon Event",
-    location: "Dhaka, Bangladesh",
-    duration: "Dec 24,2024",
-    description: "Served as a core team member in a competitive hackathon, contributing to the onsite finals by developing and training an AI model for backend services.",
+    title: "Web Developer Intern",
+    company: "Edutech Multimedia",
+    location: "Kolkata, India (Remote)",
+    duration: "Jan 2023 - Mar 2023",
+    description: "Built and customized WordPress and WooCommerce sites using Elementor and custom CSS for client projects. Improved layout responsiveness, optimized loading speed, and ensured consistent design experience across devices.",
     type: "work"
   },
   {
     id: 3,
-    title: "Executive Member",
-    company: "Hult Prize Foundation",
-    location: "IUBAT, Dhaka",
-    duration: "2021 - 2022",
-    description: "Organized and promoted campus-wide events encouraging entrepreneurship and social impact, boosting student participation in the global Hult Prize competition.",
+    title: "Dhaka Division Hackathon Participant",
+    company: "IUBAT",
+    location: "Dhaka, Bangladesh",
+    duration: "2024",
+    description: "Participated in competitive hackathon developing innovative solutions and collaborating with cross-functional teams under time constraints.",
     type: "work"
   },
   {
     id: 4,
-    title: "Executive Member",
-    company: "BASIS Student Forum",
-    location: "IUBAT, Dhaka",
-    duration: "2021 - 2022",
-    description: "Collaborated in organizing industry-focused events and tech workshops, actively promoting innovation and career opportunities in the local tech scene.",
+    title: "Executive Member - Hult Prize",
+    company: "IUBAT",
+    location: "Dhaka, Bangladesh",
+    duration: "2021 - 2023",
+    description: "Organized campus-wide events encouraging entrepreneurship and social impact, promoting student participation in the global Hult Prize competition.",
     type: "work"
   },
   {
     id: 5,
-    title: "BSc in Computer Science & Engineering",
-    company: "International University of Business, Agriculture and Technology (IUBAT)",
+    title: "Executive Member - BASIS",
+    company: "IUBAT",
     location: "Dhaka, Bangladesh",
-    duration: "May 2021 - Present",
-    description: "Pursuing a Bachelor's degree with a focus on software development, algorithms, web technologies, and system design. Completed major projects in MERN stack, ASP.NET Core, and participated in competitive programming events.",
+    duration: "2021 - 2023",
+    description: "Collaborated in organizing industry-focused events and tech workshops, promoting innovation and career opportunities in the local tech scene.",
+    type: "work"
+  },
+  {
+    id: 6,
+    title: "BSc in Computer Science & Engineering",
+    company: "IUBAT, Dhaka",
+    location: "Dhaka, Bangladesh",
+    duration: "June 2021 - June 2025",
+    description: "Graduated with CGPA: 3.88/4.00. Focused on software development, algorithms, web technologies, and system design. Completed major projects in MERN stack, Next.js, NestJS, and participated in competitive programming events.",
     type: "education"
   }
 ]

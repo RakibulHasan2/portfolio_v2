@@ -105,7 +105,7 @@ export const ContactSection = () => {
                 <ContactItem 
                   icon={<MapPin className="h-5 w-5" />}
                   title="Location"
-                  value="Gazipura 27, Tongi"
+                  value="Gazipura, Dhaka, Bangladesh"
                   href="#"
                 />
                 
@@ -113,7 +113,7 @@ export const ContactSection = () => {
                   <h4 className="text-sm font-medium mb-4">Connect with me</h4>
                   <div className="flex space-x-4">
                     <SocialButton href="https://github.com/RakibulHasan2" name="GitHub" />
-                    <SocialButton href="https://www.linkedin.com/in/rakibul-hasan-0261a8236/" name="LinkedIn" />
+                    <SocialButton href="https://www.linkedin.com/in/rakibulhasn2/" name="LinkedIn" />
                     <SocialButton href="https://www.facebook.com/profile.php?id=100012115905344" name="Facebook" />
                   </div>
                 </div>
