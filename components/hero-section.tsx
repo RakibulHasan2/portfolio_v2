@@ -1,41 +1,63 @@
-"use client"
+"use client";
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { ArrowDownToLine, Github as GitHub, Linkedin, Mail } from 'lucide-react';
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import {
+  ArrowDownToLine,
+  Github as GitHub,
+  Linkedin,
+  Mail,
+} from "lucide-react";
+import { useTheme } from "next-themes";
 import img1 from "@/public/Rakib.png";
 export const HeroSection = () => {
+  const { theme } = useTheme();
+  
   return (
-    <section 
+    <section
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20 "
       id="hero"
     >
+      {/* Theme-based Grid Background */}
+      {theme === 'dark' ? (
+        <div className="absolute inset-0 -z-10">
+          {/* vertical lines */}
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:4vw_4vw]" />
+          {/* horizontal lines */}
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:4vw_4vw]" />
+        </div>
+      ) : (
+        <div className="absolute inset-0 -z-10 opacity-60 backdrop-blur-[1px]">
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.06)_1px,transparent_1px)] bg-[length:4vw_4vw]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.06)_1px,transparent_1px)] bg-[length:4vw_4vw]" />
+        </div>
+      )}
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 -left-4 w-72 h-72 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" />
         <div className="absolute top-0 -right-4 w-72 h-72 bg-chart-1/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000" />
         <div className="absolute -bottom-8 left-20 w-72 h-72 bg-chart-2/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000" />
       </div>
-      
+
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <Image 
-                src={img1}
-                alt="Rakibul Hasan" 
-                height={1500}
-                width={1500}
-                className="object-cover min-h-screen w-full"
-              />
+          <Image
+            src={img1}
+            alt="Rakibul Hasan"
+            height={1500}
+            width={1500}
+            className="object-cover min-h-screen w-full"
+          />
         </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ 
+          transition={{
             duration: 0.8,
             ease: [0.6, 0.05, 0.01, 0.9],
-            delay: 0.3
+            delay: 0.3,
           }}
           className="lg:order-2 order-1 max-w-2xl"
         >
@@ -48,7 +70,11 @@ export const HeroSection = () => {
             Full Stack Engineer
           </h2>
           <p className="text-muted-foreground mb-8 text-lg">
-          Full Stack Engineer with practical experience developing and deploying eCommerce, portfolio websites, and comprehensive restaurant management systems using Next.js, React.js, NestJS, Prisma, Docker, Vercel and AWS. Currently working at Hotchpotch Digital, contributing across the full project lifecycle.
+            Full Stack Engineer with practical experience developing and
+            deploying eCommerce, portfolio websites, and comprehensive
+            restaurant management systems using Next.js, React.js, NestJS,
+            Prisma, Docker, Vercel and AWS. Currently working at Hotchpotch
+            Digital, contributing across the full project lifecycle.
           </p>
           {/* Social Links */}
           <div className="flex gap-4 mb-8">
@@ -90,7 +116,12 @@ export const HeroSection = () => {
             <Button asChild size="lg" className="rounded-full">
               <a href="#contact">Contact Me</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="rounded-full group">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="rounded-full group"
+            >
               <a href="#projects" className="flex items-center gap-2">
                 View Projects
                 <ArrowDownToLine className="h-4 w-4 transition-transform group-hover:translate-y-1" />
@@ -101,26 +132,26 @@ export const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div 
+      <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 1 }}
       >
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center p-1">
-          <motion.div 
+          <motion.div
             className="w-1.5 h-1.5 bg-primary rounded-full"
-            animate={{ 
+            animate={{
               y: [0, 12, 0],
             }}
-            transition={{ 
-              repeat: Infinity, 
+            transition={{
+              repeat: Infinity,
               duration: 1.5,
-              ease: "easeInOut" 
+              ease: "easeInOut",
             }}
           />
         </div>
       </motion.div>
     </section>
-  )
-}
+  );
+};
