@@ -11,20 +11,22 @@ import Image, { StaticImageData } from 'next/image';
 import sailor from "@/public/projects/sailor.jpg"
 import pos from "@/public/projects/pos.jpg"
 import quiz from "@/public/projects/quiz.jpg"
-import globe from "@/public/projects/globe.jpg"
-import image2 from "@/public/projects/image.png"
-import image1 from "@/public/projects/image1.png"
+import adda from "@/public/projects/adda.png"
 import hotch from "@/public/projects/hotch.png"
+import muneer from "@/public/projects/muneer.png"
+import pristine from "@/public/projects/pristine.png"
+import friday from "@/public/projects/friday.png"
+
 const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   const projects = [
     {
       id: 1,
-      title: "Ecommerce Platform (USA Client)",
+      title: "eCommerce Platform (USA Client)",
       description: "Full-featured eCommerce solution supporting customer and admin operations with advanced product filtering, category browsing, size-based inventory management, OTP-based login, guest checkout, and comprehensive admin panel.",
-      image: sailor,
-      liveLink: "https://pristine-couture.vercel.app/",
+      image: pristine,
+      liveLink: "https://drive.google.com/drive/folders/1R3Cl56QOE2Sy_FPqFvOrmagrOPJuAcO9",
       technologies: ["Next.js", "React.js", "NestJS", "Prisma", "PostgreSQL", "Tailwind CSS", "Docker", "AWS EC2"],
       category: "fullstack"
     },
@@ -32,8 +34,8 @@ const ProjectsSection = () => {
       id: 2,
       title: "Adda Chinese Party Center",
       description: "Dual-purpose platform for restaurant ordering and culinary course management with course enrollment, testimonial approval, certificate generation, food catalog, and secure admin authentication.",
-      image: pos,
-      liveLink: "https://adda-restaurant-management.vercel.app/",
+      image: adda,
+      liveLink: "https://www.addaarestaurant.com/",
       technologies: ["Next.js", "TypeScript", "Firebase Firestore", "Tailwind CSS", "ImgBB", "JWT"],
       category: "fullstack"
     },
@@ -41,7 +43,7 @@ const ProjectsSection = () => {
       id: 3,
       title: "POS System (MERN Stack)",
       description: "Role-based POS system with manager/staff access control, product management, billing module with advanced filtering, sales tracking, customer management, and PDF invoice generation.",
-      image: quiz,
+      image: pos,
       liveLink: "https://pos-frontend-one-olive.vercel.app/",
       githubLink: "https://github.com/RakibulHasan2/pos-frontend",
       backendLink: "https://github.com/RakibulHasan2/pos-backend",
@@ -52,7 +54,7 @@ const ProjectsSection = () => {
       id: 4,
       title: "Gadget Sailor - E-commerce Platform",
       description: "eCommerce platform with admin-side CRUD operations, dynamic product filtering, secure shopping cart, user authentication, and multiple payment options.",
-      image: globe,
+      image: sailor,
       liveLink: "https://gadget-sailor-frontend.vercel.app/",
       githubLink: "https://github.com/RakibulHasan2/gadget-sailor-frontend",
       backendLink: "https://github.com/RakibulHasan2/gadget-sailor-backend",
@@ -64,7 +66,7 @@ const ProjectsSection = () => {
       title: "Hotchpotch Digital Website",
       description: "Company portfolio website featuring service overviews, project showcases, and team profiles with modern animations and responsive design.",
       image: hotch,
-      liveLink: "https://hotchpotch-frontend-dusky.vercel.app/",
+      liveLink: "https://www.hotchpotchdigital.io/",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript", "GSAP"],
       category: "frontend"
     },
@@ -72,8 +74,8 @@ const ProjectsSection = () => {
       id: 6,
       title: "Friday Sourcing Portfolio",
       description: "Professional buying house portfolio website showcasing services and company information.",
-      image: image2,
-      liveLink: "https://friday-sourcing.vercel.app/",
+      image: friday,
+      liveLink: "https://fridaysourcing.com/",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
       category: "frontend"
     },
@@ -81,8 +83,8 @@ const ProjectsSection = () => {
       id: 7,
       title: "Muneer International Portfolio",
       description: "Corporate website for international trading company with modern design and responsive layout.",
-      image: image1,
-      liveLink: "https://muneer-international.vercel.app/",
+      image: muneer,
+      liveLink: "https://www.muneerint.com/",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
       category: "frontend"
     }
