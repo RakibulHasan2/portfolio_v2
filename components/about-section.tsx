@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { SectionHeading } from "@/components/section-heading";
-import img1 from "@/public/2.jpeg";
+import img1 from "@/public/rakib3.jpg";
 export const AboutSection = () => {
   return (
     <section id="about" className="py-20 relative">
@@ -29,19 +29,6 @@ export const AboutSection = () => {
                 />
               </div>
             </div>
-            {/* <div className="relative max-w-[800px]">
-              <div className="absolute -inset-2 bg-gradient-to-r from-primary to-chart-1 rounded-xl blur-lg opacity-30 group-hover:opacity-100 transition duration-1000"></div>
-              <div className="relative rounded-xl overflow-hidden">
-                <Image
-                  // src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg"
-                  src={img1}
-                  alt="Rakibul Hasan working"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            </div> */}
           </motion.div>
 
           <motion.div
@@ -52,39 +39,33 @@ export const AboutSection = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-bold">
-              Full Stack Developer with a passion for building impactful digital
-              solutions
+              Full Stack Engineer with practical experience across the entire project lifecycle
             </h3>
 
             <p className="text-muted-foreground">
-              I’m Rakibul Hasan, a Full Stack Developer with a strong foundation
-              in building responsive, user-centric web applications. I have
-              hands-on experience with both frontend and backend technologies,
-              specializing in the MERN stack (MongoDB, Express.js, React.js,
-              Node.js) and ASP.NET Core.
+              I&rsquo;m Rakibul Hasan, a Full Stack Engineer with extensive experience developing and deploying 
+              eCommerce platforms, portfolio websites, and comprehensive restaurant management systems. 
+              Currently working at Hotchpotch Digital, I&rsquo;ve contributed across the full project lifecycle, 
+              covering development, deployment, product research, and client communication.
             </p>
 
             <p className="text-muted-foreground">
-              My development journey started with a curiosity about digital
-              systems and has evolved into a deep commitment to creating
-              efficient, maintainable, and scalable applications. I thrive in
-              dynamic environments where I can combine my technical expertise
-              with a focus on solving real-world problems and delivering
-              measurable value to users.
+              I specialize in modern technologies including Next.js, React.js, NestJS, Prisma, Docker, 
+              Vercel, and AWS. At Hotchpotch Digital, I&rsquo;ve led designer teams to align UI/UX with technical 
+              goals, managed deployments to cPanel and AWS, and coordinated workload distribution within 
+              agile teams using modern project management tools.
             </p>
 
             <p className="text-muted-foreground">
-              I’m passionate about continuous learning and improving my skills,
-              staying updated with the latest trends and tools in web
-              development. Outside of coding, I enjoy collaborating with
-              cross-functional teams, refining processes, and building
-              applications that solve user problems in innovative ways.
+              Working in a dynamic startup environment has strengthened my ability to connect design, 
+              development, and strategy, ensuring smooth execution and successful delivery of every project. 
+              I&rsquo;m passionate about building scalable solutions that deliver real business value.
             </p>
             <div className="pt-4">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                <CounterItem value={1} label="Years Experience" />
-                <CounterItem value={10} label="Projects Completed" />
-                <CounterItem value={10} label="Certificates" />
+                <CounterItem value={2} label="Years Experience" />
+                <CounterItem value={15} label="Projects Completed" />
+                <CounterItem value={7} label="Certificates" />
                 <CounterItem value={1} label="Hackathon" />
               </div>
             </div>
